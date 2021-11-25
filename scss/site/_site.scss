@@ -1,0 +1,19 @@
+//-----> $SITE
+
+* {
+    box-sizing: border-box;
+}
+
+html  {
+    font-size: 100%;
+}
+
+body, html {
+    height: 95vh;
+}
+
+body {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: $green;
+    color: $white;
+}
