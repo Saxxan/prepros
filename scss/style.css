@@ -80,21 +80,45 @@ body {
 header a {
   padding: 5px;
   text-decoration: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header a div {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 header a:first-child {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
-header a:last-child {
+header a:first-child div:first-child {
+  width: 100px;
+  text-align: center;
+  padding: 6px;
+  background-color: white;
+  color: black;
+  border-radius: 6px;
+}
+
+header a:last-child div:first-child {
+  width: 90%;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+}
+
+header a:last-child img {
+  color: white;
+  width: 30px;
+  height: 30px;
+  padding: 6px;
+  margin-left: 10px;
 }
 
 header a:visited {
