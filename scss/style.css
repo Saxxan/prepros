@@ -20,7 +20,7 @@ body, html {
 }
 
 body {
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: "Roboto";
   background-color: #7ACE7E;
   color: white;
 }
@@ -132,6 +132,22 @@ header a:visited {
   border: 10px solid white;
 }
 
+.edit--pencil {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: white;
+  position: relative;
+  left: -110px;
+  top: 185px;
+  cursor: pointer;
+}
+.edit--pencil img {
+  width: 10px;
+  height: 10px;
+  color: black;
+}
+
 nav {
   width: 90%;
   margin: auto;
@@ -151,10 +167,42 @@ ul li {
   width: 100px;
   height: 100px;
   margin: 12px;
+  -webkit-box-shadow: 2px 2px #659C5C;
+          box-shadow: 2px 2px #659C5C;
+  -webkit-transition: -webkit-transform 0.5s ease-in-out;
+  transition: -webkit-transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+  cursor: pointer;
+}
+ul li:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 ul li a {
   text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 ul li a:visited {
   color: white;
+}
+ul li a img {
+  width: 30px;
+  height: 30px;
+}
+ul li a p {
+  margin: 0;
+  padding: 6px;
 }
