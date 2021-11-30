@@ -114,15 +114,31 @@ header a:first-child {
   color: black;
   border-radius: 6px;
   text-decoration: none;
+  -webkit-transition: -webkit-transform 0.5s ease-in-out;
+  transition: -webkit-transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+}
+header a:first-child:hover {
+  -webkit-transform: translateX(-10px);
+          transform: translateX(-10px);
 }
 header a:last-child {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
   text-decoration: none;
+  -webkit-transition: -webkit-transform 0.5s ease-in-out;
+  transition: -webkit-transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
 }
 header a:last-child:visited {
   color: white;
+}
+header a:last-child:hover {
+  -webkit-transform: translateX(10px);
+          transform: translateX(10px);
 }
 header a:last-child img {
   color: white;

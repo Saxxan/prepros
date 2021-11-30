@@ -18,14 +18,25 @@ header {
         color: $black;
         border-radius: $unit;
         text-decoration: none;
+        transition: transform .5s ease-in-out;
+
+        &:hover {
+            transform: translateX(-10px);
+        }
     }
+
 
     & a:last-child {
         justify-content: flex-end;
         text-decoration: none;
+        transition: transform .5s ease-in-out;
 
         &:visited {
             color: $white;
+        }
+
+        &:hover {
+            transform: translateX(10px);
         }
 
         & img {
