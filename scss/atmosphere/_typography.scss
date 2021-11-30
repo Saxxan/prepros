@@ -5,3 +5,14 @@
 .margin--bottom {
     margin-bottom: $space;
 }
+
+header {
+    font-size: $header--font--size;
+}
+
+main {
+
+    & nav {
+        font-size: $menu--font-size;
+    }
+}

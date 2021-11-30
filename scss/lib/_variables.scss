@@ -1,5 +1,4 @@
 //-----> $SPACE Variables
-
 $unit: 6px;
 $space: $unit * 2;
 $space--medium: $space * 1.5;
@@ -14,3 +13,10 @@ $dark-green: #659C5C;
 $white : white;
 $black: black;
 $main-color: $green;
+
+
+
+//-------> $TYPOGRAPHY
+$main--font--family:'Roboto', sans-serif;
+$header--font--size: 16px;
+$menu--font-size: 14px;

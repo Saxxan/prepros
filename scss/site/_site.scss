@@ -13,7 +13,7 @@ body, html {
 }
 
 body {
-    font-family:'Roboto';
-    background-color: $green;
+    font-family: $main--font--family;
+    background-color: $main-color;
     color: $white;
 }

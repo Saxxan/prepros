@@ -6,6 +6,14 @@
   margin-bottom: 12px;
 }
 
+header {
+  font-size: 16px;
+}
+
+main nav {
+  font-size: 14px;
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -20,7 +28,7 @@ body, html {
 }
 
 body {
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   background-color: #7ACE7E;
   color: white;
 }
@@ -77,52 +85,51 @@ body {
       flex-wrap: wrap;
 }
 
-header a {
+header {
   padding: 5px;
   text-decoration: none;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
-
-header a div {
+header a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
-
 header a:first-child {
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-}
-
-header a:first-child div:first-child {
   width: 100px;
   text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 6px;
   background-color: white;
   color: black;
   border-radius: 6px;
+  text-decoration: none;
 }
-
-header a:last-child div:first-child {
-  width: 90%;
+header a:last-child {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  text-decoration: none;
 }
-
+header a:last-child:visited {
+  color: white;
+}
 header a:last-child img {
   color: white;
   width: 30px;
   height: 30px;
   padding: 6px;
   margin-left: 10px;
-}
-
-header a:visited {
-  color: white;
 }
 
 .avatar {
@@ -143,8 +150,8 @@ header a:visited {
   cursor: pointer;
 }
 .edit--pencil img {
-  width: 10px;
-  height: 10px;
+  width: 60%;
+  height: 60%;
   color: black;
 }
 

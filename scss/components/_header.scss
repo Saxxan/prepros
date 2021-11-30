@@ -1,39 +1,39 @@
-header a {
+header {
     padding: 5px;
     text-decoration: none;
     align-items: center;
-}
+    justify-content: space-between;
 
-header a div {
-    align-items: center;
-}
+    & a {
+        align-items: center;
+    }
 
-header a:first-child {
-    justify-content: flex-start; 
-}
+    & a:first-child {
+        width: 100px;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        padding: $padding;
+        background-color: $white;
+        color: $black;
+        border-radius: $unit;
+        text-decoration: none;
+    }
 
-header a:first-child div:first-child {
-    width: 100px;
-    text-align: center;
-    padding: $padding;
-    background-color: $white;
-    color: $black;
-    border-radius: $unit;
-}
+    & a:last-child {
+        justify-content: flex-end;
+        text-decoration: none;
 
-header a:last-child div:first-child {
-    width: 90%;
-    justify-content: flex-end;
-}
+        &:visited {
+            color: $white;
+        }
 
-header a:last-child img {
-    color: $white;
-    width: 30px;
-    height: 30px;
-    padding: $padding;
-    margin-left: 10px;
-}
-
-header a:visited {
-    color: white;
+        & img {
+                color: $white;
+                width: 30px;
+                height: 30px;
+                padding: $padding;
+                margin-left: 10px;
+        }
+    }
 }
